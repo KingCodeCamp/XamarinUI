@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.Trainer.StartCoursePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="20">
+                <StackLayout Spacing="20">
+                    <Grid ColumnDefinitions="Auto,*">
+                        <Label Text="&#x000f004d;" FontFamily="material" TextColor="Black" FontSize="28" VerticalTextAlignment="Center" />
+                        <Label  Grid.Column="1" Text="Trainer" FontFamily="BoldFont" TextColor="#000" VerticalTextAlignment="Center" FontSize="{StaticResource LargerSize}" HorizontalOptions="Center" />
+                    </Grid>
+
+                    <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="20" Padding="15" HeightRequest="250">
+                        <Image Source="trainer.png" Aspect="Fill" />
+                    </Frame>
+
+                    <Label Text="Description" FontSize="{StaticResource LargeSize}" TextColor="#000" FontFamily="BoldFont" />
+                    <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo" FontFamily="MediumFont" FontSize="14" />
+
+                    <Button Style="{StaticResource CustomBtn}" Text="Resume course" TextColor="White" BackgroundColor="{DynamicResource SecondaryColor}" FontFamily="MediumFont" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

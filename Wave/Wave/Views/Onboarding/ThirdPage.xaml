@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" NavigationPage.HasNavigationBar="False"
+             x:Class="Wave.Views.Onboarding.ThirdPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,*">
+            <pv:PancakeView HeightRequest="300" WidthRequest="300">
+                <pv:PancakeView.Clip>
+                    <PathGeometry Figures="M0 0H907V227.581C552.794 264.138 354.206 269.387 0 227.581V0Z" />
+                </pv:PancakeView.Clip>
+                <Image x:Name="p" Aspect="Fill" />
+            </pv:PancakeView>
+
+            <StackLayout Spacing="20" Margin="15,20,15,0" Grid.Row="1">
+                <Label Text="Study at your own comfort" FontSize="24" HorizontalOptions="Center" FontFamily="BoldFont" />
+                <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et" TextColor="{DynamicResource LightGrayColor}" HorizontalOptions="Center" FontFamily="LightFont" FontSize="{DynamicResource NormalSize}"  HorizontalTextAlignment="Center"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                    <Grid HeightRequest="8" WidthRequest="8" BackgroundColor="{DynamicResource SecondaryColor}">
+                        <Grid.Clip>
+                            <EllipseGeometry RadiusX="4" RadiusY="4" Center="4,4"/>
+                        </Grid.Clip>
+                    </Grid>
+                    
+                    <Grid HeightRequest="8" WidthRequest="8" BackgroundColor="{DynamicResource SecondaryColor}">
+                        <Grid.Clip>
+                            <EllipseGeometry RadiusX="4" RadiusY="4" Center="4,4"/>
+                        </Grid.Clip>
+                    </Grid>
+
+                    <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="10" Padding="0" HeightRequest="8" WidthRequest="50" />
+                </StackLayout>
+                <BoxView HeightRequest="40" BackgroundColor="Transparent" />
+                <Button Text="Get Started" Style="{DynamicResource CustomBtn}" Grid.Column="1" BackgroundColor="{DynamicResource SecondaryColor}" x:Name="start" Clicked="start_Clicked" TextColor="White" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.Trainer.EditProfilePage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *" Margin="20">
+            <Grid ColumnDefinitions="Auto,*,Auto" BackgroundColor="#FFF">
+                <Label Text="&#x000f004d;" FontFamily="material" TextColor="Black" FontSize="30" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Label Grid.Column="1" Text="Edit Trainer" FontFamily="BoldFont" TextColor="#000" FontSize="{StaticResource LargeSize}" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" />
+            </Grid>
+
+            <ScrollView Grid.Row="1">
+
+                <StackLayout Spacing="15" Margin="0,40,0,20">
+                    <Grid WidthRequest="160" HorizontalOptions="Center">
+                        <Frame IsClippedToBounds="True" HeightRequest="100" VerticalOptions="Center" WidthRequest="100" Padding="0" CornerRadius="50" HorizontalOptions="Center">
+                            <Image Source="tk.png" Aspect="Fill" />
+                        </Frame>
+                        <Frame IsClippedToBounds="True" BackgroundColor="#F2F4FB" WidthRequest="40" HeightRequest="40" CornerRadius="20" Padding="0" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,-110,0">
+                            <Label Text="&#x000f0edc;" FontFamily="material" TextColor="Black" FontSize="28" VerticalOptions="Center" HorizontalOptions="Center" />
+                        </Frame>
+                    </Grid>
+
+                    <Frame BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Ogunmola Akinola" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="ogunmola@gmail.com" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Phone number" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Date of Birth" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+
+                    <Grid ColumnDefinitions="*,*"  ColumnSpacing="20" HorizontalOptions="FillAndExpand">
+                        <Frame BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                            <!--<Entry Placeholder="Password" PlaceholderColor="{DynamicResource LightGrayColor}" />-->
+                            <RadioButton Content="Male" IsChecked="False" />
+                        </Frame>
+                        <Frame Grid.Column="1" BackgroundColor="#F5F6F8" HasShadow="False" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                            <RadioButton Content="Female" IsChecked="True" />
+                        </Frame>
+                    </Grid>
+
+                    <BoxView HeightRequest="40" />
+                    <Button Text="Save" Style="{DynamicResource CustomBtn}" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" />
+                    <BoxView HeightRequest="20" />
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

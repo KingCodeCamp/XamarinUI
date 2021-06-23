@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "aViRb/1roN+tUL5v2CTsp1nNVlSGcQB4JyYftVTudamj+WdOMLIB9WDn5zvRKUFbzXU6mjZa/uQA/Xy+v7XnwA==",
+  "success": true,
+  "projectFilePath": "C:\\Complus Projects\\TutorialArticle\\Wave\\Wave.iOS\\Wave.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\COMPLUS TECH\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}

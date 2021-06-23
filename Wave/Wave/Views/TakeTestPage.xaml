@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.TakeTestPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <StackLayout Spacing="20" Margin="20">
+                <Image Source="tk.png" Aspect="Fill" HeightRequest="250" />
+                <Label Text="Welcome Alex 👋" TextColor="{DynamicResource PrimaryColor}" FontSize="{DynamicResource LargerSize}" FontFamily="BoldFont" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Before you proceed to take the courses, We'll love you to take this brief baseline test" 
+                  HorizontalTextAlignment="Center" FontSize="14" />
+                
+                <Label Text="It's just part of our policy and it won't affect your eligibility to take the course" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="14" />
+
+                <Button Style="{StaticResource CustomBtn}" Text="Skip" BorderColor="{DynamicResource SecondaryColor}" BorderWidth="2" />
+                
+                <Button Style="{StaticResource CustomBtn}" Text="Take Test" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

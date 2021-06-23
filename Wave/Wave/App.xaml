@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.App">
+    <Application.Resources>
+        <Color x:Key="PrimaryColor">#183259</Color>
+        <Color x:Key="SecondaryColor">#3962F1</Color>
+        <Color x:Key="GrayColor">#707070</Color>
+        <Color x:Key="LightGrayColor">#C4C8D6</Color>
+        <Color x:Key="DangerColor">#BE2623</Color>
+
+        <!-- Font SIZES-->
+        <x:Double x:Key="SmallSize">12</x:Double>
+        <x:Double x:Key="NormalSize">14</x:Double>
+        <x:Double x:Key="BigSize">18</x:Double>
+        <x:Double x:Key="LargeSize">24</x:Double>
+        <x:Double x:Key="LargerSize">30</x:Double>
+
+
+
+        <Style x:Key="EntryFrame" TargetType="Frame">
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Padding" Value="15,0" />
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="BorderColor" Value="{DynamicResource SecondaryColor}" />
+        </Style>
+
+        <Style x:Key="CustomBtn" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="CornerRadius" Value="25" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+            <Setter Property="Padding" Value="30,15" />
+        </Style>
+
+
+    </Application.Resources>
+</Application>

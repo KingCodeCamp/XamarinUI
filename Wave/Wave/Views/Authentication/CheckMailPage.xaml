@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False"
+             x:Class="Wave.Views.Authentication.CheckMailPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid Margin="20,25" RowDefinitions="250,Auto,*,Auto" RowSpacing="25">
+                <Image x:Name="img" Aspect="Fill" />
+            
+
+            <StackLayout Spacing="15" Grid.Row="1">
+                <Label Text="Check your mail" TextColor="{DynamicResource PrimaryColor}" HorizontalTextAlignment="Center" FontFamily="BoldFont" FontSize="{DynamicResource BigSize}" />
+                <Label Text="Message has been sent to your mail, please confirm" TextColor="{DynamicResource LightGrayColor}" HorizontalTextAlignment="Center" FontFamily="LightFont" FontSize="{DynamicResource NormalSize}" />
+            </StackLayout>
+
+            <StackLayout Spacing="15" Grid.Row="2">
+                <Button Text="Open email app" Style="{DynamicResource CustomBtn}" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" />
+                
+                
+                <Button Text="Continue" Style="{DynamicResource CustomBtn}" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" x:Name="enterPassword" Clicked="enterPassword_Clicked" />
+
+                <Label Text="Skip, I'll confirm later" TextColor="{DynamicResource LightGrayColor}" HorizontalTextAlignment="Center" FontFamily="LightFont" FontSize="{DynamicResource NormalSize}" />
+
+                <BoxView HeightRequest="40" />
+            </StackLayout>
+
+            <Label Grid.Row="3" HorizontalTextAlignment="Center" FontFamily="LightFont">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Did not receive the email? Check your spam filter, or " TextColor="{DynamicResource LightGrayColor}" />
+                        <Span Text="try another email address" TextColor="{DynamicResource SecondaryColor}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

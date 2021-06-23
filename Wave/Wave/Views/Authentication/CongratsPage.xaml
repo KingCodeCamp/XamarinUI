@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasNavigationBar="False"
+             x:Class="Wave.Views.Authentication.CongratsPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid Margin="20,25" RowDefinitions="250,Auto,Auto" RowSpacing="25">
+                    <Image x:Name="img" Aspect="Fill" />
+                    <StackLayout Spacing="15" Grid.Row="1">
+                            <Label Text="Congratulations!" TextColor="{DynamicResource PrimaryColor}" HorizontalTextAlignment="Center" FontFamily="BoldFont" FontSize="{DynamicResource BigSize}" />
+                        <Label Text="You have successfully signed up to wave learning platform, we hope you have an intuitive learning experience" TextColor="{DynamicResource LightGrayColor}" HorizontalTextAlignment="Center" FontFamily="LightFont" FontSize="{DynamicResource NormalSize}" />
+
+                        <BoxView HeightRequest="30" />
+                    </StackLayout>
+
+                    <Button  Grid.Row="2" Text="Start Learning Now!" Style="{DynamicResource CustomBtn}" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" x:Name="home" Clicked="home_Clicked" />
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

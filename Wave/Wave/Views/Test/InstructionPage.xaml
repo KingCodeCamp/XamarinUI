@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.Test.InstructionPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="{DynamicResource GrayColor}">
+            <Frame VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="White" HasShadow="False" CornerRadius="20" WidthRequest="300" Padding="20">
+                <StackLayout Spacing="20" HorizontalOptions="Center">
+                    <Image Source="tinst.png" HeightRequest="150" />
+                    <Label Text="Test instructions" FontSize="{DynamicResource BigSize}" FontFamily="BoldFont" HorizontalOptions="Center"/>
+
+                    <Label Text="1. You have 30 minutes to complete this assessment test " FontSize="14" TextColor="Black" /> 
+                    <Label Text="2. You may not terminate the test page" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" /> 
+                    <Label Text="3. You have 30 minutes to complete this assessment test " FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
+                    <Label Text="4. You may not terminate the test page" FontSize="14" TextColor="Black" LineBreakMode="WordWrap" />
+
+                    <Button Style="{StaticResource CustomBtn}" Text="Take test" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" />
+                    <BoxView HeightRequest="20" />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

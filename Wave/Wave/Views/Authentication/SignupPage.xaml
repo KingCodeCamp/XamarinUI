@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.Authentication.SignupPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid RowDefinitions="80,Auto,Auto,Auto" RowSpacing="20" Margin="20,0" >
+
+                <Image Source="logo.png" WidthRequest="100" Aspect="Fill" HorizontalOptions="Center"  Margin="0,15,0,0" />
+
+                <StackLayout Grid.Row="1" Spacing="10">
+                    <Label Text="Create a new account" TextColor="{DynamicResource PrimaryColor}" FontSize="{DynamicResource BigSize}" FontFamily="BoldFont" HorizontalOptions="Center"/>
+                    <Label Text="join the world's biggest learning platform" TextColor="{DynamicResource GrayColor}" FontFamily="LightFont" FontSize="16" HorizontalOptions="Center" />
+                    <BoxView HeightRequest="30" BackgroundColor="Transparent" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Spacing="15">
+                    <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Email your organisation name" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Location of organisation" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Phone number" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Email" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="50" CornerRadius="25">
+                        <Entry Placeholder="Password" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                    </Frame>
+                    
+                </StackLayout>
+
+                <StackLayout Grid.Row="3">
+                    <Button Text="Create account" Style="{DynamicResource CustomBtn}" BackgroundColor="{DynamicResource SecondaryColor}" TextColor="White" />
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

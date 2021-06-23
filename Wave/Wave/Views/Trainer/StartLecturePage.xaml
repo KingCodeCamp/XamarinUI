@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Wave.Views.Trainer.StartLecturePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="Auto, Auto">
+                <Frame BackgroundColor="{DynamicResource PrimaryColor}" HeightRequest="250">
+                    <Image Source="trainer.png" Aspect="Fill" HorizontalOptions="Center" />
+                </Frame>
+                <Label Text="&#x000f004d;" FontFamily="material" TextColor="Black" FontSize="28" VerticalTextAlignment="Center" Margin="20" VerticalOptions="Start" HorizontalOptions="Start" />
+                <Label Text="&#x000f040c;" FontFamily="material" TextColor="White" FontSize="48" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" />
+
+                <!--course details-->
+                <pv:PancakeView BackgroundColor="White" CornerRadius="20,20,0,0" Margin="0,-30,0,0" Padding="20" Grid.Row="2" VerticalOptions="Start">
+                    <StackLayout Spacing="20">
+                        <Label Text="Creative thinking" TextColor="#000" FontSize="{StaticResource LargeSize}" FontFamily="BoldFont" />
+                        <Grid ColumnDefinitions="*,*">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="Transparent" HeightRequest="38" WidthRequest="38" Padding="0" IsClippedToBounds="True"  CornerRadius="19">
+                                    <Image Source="tk.png" Aspect="Fill" />
+                                </Frame>
+                                <Label VerticalOptions="Center" FontFamily="MediumFont" FontSize="{StaticResource SmallSize}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Author: " TextColor="Black"/>
+                                            <Span Text="Jemmy" TextColor="{DynamicResource SecondaryColor}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                        </Grid>
+
+                        <!--tabviews-->
+                        <Grid>
+                            <BoxView HeightRequest="2" Margin="0,40,0,0" BackgroundColor="{DynamicResource LightGrayColor}" VerticalOptions="Start" />
+                            <xct:TabView IsSwipeEnabled="False" TabIndicatorHeight="3" TabIndicatorPlacement="Bottom" IsTabTransitionEnabled="True" TabContentHeight="400" Margin="0,-10,0,0">
+
+                                <xct:TabViewItem Text="Lectures" HorizontalOptions="Center" FontFamily="BoldFont" FontAttributes="Bold" TextColorSelected="{DynamicResource PrimaryColor}" FontFamilySelected="BoldFont" TextColor="{AppThemeBinding Light={DynamicResource LightGrayColor}, Dark=White}" FontSize="20">
+                                    <xct:TabViewItem.FontSizeSelected>20</xct:TabViewItem.FontSizeSelected>
+                                    <xct:TabViewItem.Content>
+                                        <StackLayout  HorizontalOptions="Center" WidthRequest="500" HeightRequest="150">
+                                            <BoxView HeightRequest="2" BackgroundColor="{DynamicResource PrimaryColor}" HorizontalOptions="Start" WidthRequest="180" />
+                                            <Frame BackgroundColor="#FEFEFE" BorderColor="#14151630" Padding="20" CornerRadius="15">
+                                                <Grid ColumnDefinitions="*,Auto">
+                                                    <Label Text="Get Started" TextColor="#000" FontSize="{StaticResource BigSize}" FontFamily="BoldFont" />
+                                                    <Label Text="&#x000f0142;" FontFamily="material" TextColor="Black" FontSize="24" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1" />
+                                                </Grid>
+                                            </Frame><Frame BackgroundColor="#FEFEFE" BorderColor="#14151630" Padding="20" CornerRadius="15">
+                                                <Grid ColumnDefinitions="*,Auto">
+                                                    <Label Text="Get Started" TextColor="#000" FontSize="{StaticResource BigSize}" FontFamily="BoldFont" />
+                                                    <Label Text="&#x000f0142;" FontFamily="material" TextColor="Black" FontSize="24" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1" />
+                                                </Grid>
+                                            </Frame><Frame BackgroundColor="#FEFEFE" BorderColor="#14151630" Padding="20" CornerRadius="15">
+                                                <Grid ColumnDefinitions="*,Auto">
+                                                    <Label Text="Get Started" TextColor="#000" FontSize="{StaticResource BigSize}" FontFamily="BoldFont" />
+                                                    <Label Text="&#x000f0142;" FontFamily="material" TextColor="Black" FontSize="24" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1" />
+                                                </Grid>
+                                            </Frame><Frame BackgroundColor="#FEFEFE" BorderColor="#14151630" Padding="20" CornerRadius="15">
+                                                <Grid ColumnDefinitions="*,Auto">
+                                                    <Label Text="Get Started" TextColor="#000" FontSize="{StaticResource BigSize}" FontFamily="BoldFont" />
+                                                    <Label Text="&#x000f0142;" FontFamily="material" TextColor="Black" FontSize="24" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1" />
+                                                </Grid>
+                                            </Frame><Frame BackgroundColor="#FEFEFE" BorderColor="#14151630" Padding="20" CornerRadius="15">
+                                                <Grid ColumnDefinitions="*,Auto">
+                                                    <Label Text="Get Started" TextColor="#000" FontSize="{StaticResource BigSize}" FontFamily="BoldFont" />
+                                                    <Label Text="&#x000f0142;" FontFamily="material" TextColor="Black" FontSize="24" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="1" />
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </xct:TabViewItem.Content>
+                                </xct:TabViewItem>
+
+                                <xct:TabViewItem Text="Overview" HorizontalOptions="Center" FontFamily="BoldFont" FontAttributes="Bold" TextColorSelected="{DynamicResource PrimaryColor}" FontFamilySelected="BoldFont" TextColor="{AppThemeBinding Light={DynamicResource LightGrayColor}, Dark=White}" FontSize="20">
+                                    <xct:TabViewItem.FontSizeSelected>20</xct:TabViewItem.FontSizeSelected>
+                                    <xct:TabViewItem.Content>
+                                        <StackLayout  HorizontalOptions="Center" WidthRequest="500" HeightRequest="150">
+                                            <BoxView HeightRequest="2" BackgroundColor="{DynamicResource PrimaryColor}" HorizontalOptions="End" WidthRequest="180" />
+                                            <Label Text="About this course" TextColor="#000" FontSize="{StaticResource LargeSize}" FontFamily="BoldFont" Margin="0,10" />
+                                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur" FontSize="14" FontFamily="MediumFont" TextColor="Black"/>
+                                        </StackLayout>
+                                    </xct:TabViewItem.Content>
+                                </xct:TabViewItem>
+
+
+                            </xct:TabView>
+                        </Grid>
+                    </StackLayout>
+                </pv:PancakeView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

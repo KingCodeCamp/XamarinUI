@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.Test.QuestionPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="15" Margin="20">
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label Text="&#x000f004d;" FontFamily="material" TextColor="Black" FontSize="28" VerticalTextAlignment="Center" />
+                    <BoxView HeightRequest="30" />
+                    <Label Grid.Column="1" Text="Assessment test" TextColor="Black" FontSize="{StaticResource LargeSize}" FontFamily="BoldFont" HorizontalTextAlignment="Start" />
+                </Grid>
+                <Label Text="Question 1/3"  FontAttributes="Bold" TextColor="Black" FontSize="{StaticResource BigSize}" Margin="0,15,0,0" />
+                <Frame BackgroundColor="{DynamicResource LightGrayColor}" HasShadow="False" Padding="0" HeightRequest="10" CornerRadius="4">
+                    <Grid ColumnDefinitions="*,2*">
+                        <BoxView BackgroundColor="{DynamicResource SecondaryColor}" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="20" BackgroundColor="White" Padding="20,20,20,40" BorderColor="{DynamicResource SecondaryColor}" HasShadow="False">
+                    <StackLayout Spacing="15">
+                        <Label Text="Select an answer" FontSize="{StaticResource BigSize}" TextColor="{DynamicResource GrayColor}" />
+                        <Label Text="Which of the following statements applies to all situations in critical thinking situations" FontFamily="BoldFont" TextColor="Black" FontSize="{StaticResource BigSize}" />
+
+                        <Button Margin="0,10,0,0" Text="Think before your act" FontFamily="MediumFont" Style="{StaticResource CustomBtn}" TextColor="White" BackgroundColor="{DynamicResource SecondaryColor}"   />
+                        <Button Text="Think before your act" Margin="0,10,0,0"  Style="{StaticResource CustomBtn}" TextColor="Black"  FontFamily="MediumFont" BorderColor="{StaticResource LightGrayColor}" BorderWidth="1" BackgroundColor="White" />
+
+                        <Button Text="Think before your act" Style="{StaticResource CustomBtn}" FontFamily="MediumFont" TextColor="Black" BorderColor="{StaticResource LightGrayColor}" BorderWidth="1" />
+
+                        <Button Text="Think before your act" Style="{StaticResource CustomBtn}" FontFamily="MediumFont" TextColor="Black" BorderColor="{StaticResource LightGrayColor}" BorderWidth="1"  />
+
+                        <Button Margin="0,50,0,0" Text="Next" Style="{StaticResource CustomBtn}" FontFamily="MediumFont" TextColor="White" BackgroundColor="{DynamicResource SecondaryColor}"   />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

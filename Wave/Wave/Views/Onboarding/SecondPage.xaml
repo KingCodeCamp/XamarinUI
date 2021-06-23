@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Wave.Views.Onboarding.SecondPage"  NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,*">
+            <pv:PancakeView HeightRequest="300" WidthRequest="300">
+                <pv:PancakeView.Clip>
+                    <PathGeometry Figures="M0 0.5H907V228.081C833.5 293 50 280 0 228.081V0.5Z" />
+                </pv:PancakeView.Clip>
+                <Image x:Name="p" Aspect="Fill" />
+            </pv:PancakeView>
+
+            <StackLayout Spacing="20" Margin="15,20,15,0" Grid.Row="1">
+                <Label Text="Get certified" FontSize="24" HorizontalOptions="Center" FontFamily="BoldFont" />
+                <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et" TextColor="{DynamicResource LightGrayColor}" HorizontalOptions="Center" FontFamily="LightFont" FontSize="{DynamicResource NormalSize}"  HorizontalTextAlignment="Center"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                    <Grid HeightRequest="8" WidthRequest="8" BackgroundColor="{DynamicResource SecondaryColor}">
+                        <Grid.Clip>
+                            <EllipseGeometry RadiusX="4" RadiusY="4" Center="4,4"/>
+                        </Grid.Clip>
+                    </Grid>
+
+                    <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="10" Padding="0" HeightRequest="8" WidthRequest="50" />
+                    
+                    <Grid HeightRequest="8" WidthRequest="8" BackgroundColor="{DynamicResource SecondaryColor}">
+                        <Grid.Clip>
+                            <EllipseGeometry RadiusX="4" RadiusY="4" Center="4,4"/>
+                        </Grid.Clip>
+                    </Grid>
+                </StackLayout>
+                <BoxView HeightRequest="40" BackgroundColor="Transparent" />
+                <Grid ColumnDefinitions="*,*" VerticalOptions="End">
+                    <Label Text="Skip" VerticalOptions="Center" FontSize="{DynamicResource BigSize}" TextColor="{DynamicResource SecondaryColor}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="skip" Tapped="skip_Tapped" NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <Button Text="Next" Style="{DynamicResource CustomBtn}" Grid.Column="1" BackgroundColor="{DynamicResource SecondaryColor}" Clicked="Button_Clicked" TextColor="White" />
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
