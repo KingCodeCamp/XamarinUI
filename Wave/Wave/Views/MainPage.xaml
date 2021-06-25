@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wave.Views.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,10" Spacing="20">
+                <Grid ColumnDefinitions="Auto,*">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <Frame BackgroundColor="Transparent" HeightRequest="38" WidthRequest="38" Padding="0" IsClippedToBounds="True"  CornerRadius="19">
+                            <Image Source="tk.png" Aspect="Fill" />
+                        </Frame>
+                        <Label VerticalOptions="Center" FontFamily="MediumFont" FontSize="{StaticResource NormalSize}" Text="Hi, Jerry" />
+                    </StackLayout>
+                </Grid>
+
+                <Label Text="What would you like to learn today?" FontSize="16" FontFamily="BoldFont" TextColor="Black"  />
+
+                <!--search course-->
+                <Frame BackgroundColor="#F5F6F8" Padding="20,0" HeightRequest="40" CornerRadius="25" Margin="0,0,0,15">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Entry Placeholder="Search for courses" PlaceholderColor="{DynamicResource LightGrayColor}" />
+                        <Label FontFamily="material" Text="&#x000f0866;" TextColor="Black" VerticalOptions="Center" HorizontalOptions="End" FontSize="28" />
+                    </Grid>
+                </Frame>
+                <!--end search-->
+
+                <Label Text="Courses For You" FontFamily="BoldFont" FontSize="{StaticResource LargeSize}" TextColor="Black" />
+
+                <CollectionView ItemsSource="{Binding Animals}" x:Name="lesson"
+                            HorizontalScrollBarVisibility="Never" HeightRequest="200">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="20" Padding="15,15,15,0" WidthRequest="130">
+                                <Grid>
+                                    <Image Source="{Binding imageUrl}" Opacity="0.4" Aspect="AspectFit" />
+                                    <StackLayout Margin="10,20">
+                                        <Label Text="{Binding title}" TextColor="White" FontFamily="BoldFont" FontSize="16" />
+                                        <Label Text="{Binding learners}" TextColor="White" FontFamily="LightFont" FontSize="14" />
+
+                                    </StackLayout>
+                                </Grid>
+
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!--last seen course-->
+                <Label Text="Last seen courses" FontFamily="BoldFont" FontSize="{StaticResource LargeSize}" TextColor="Black" />
+
+                <Frame BackgroundColor="#F0FFFC" CornerRadius="20" HeightRequest="100" Padding="0,0,20,0">
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="20">
+                        <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="20" WidthRequest="60" />
+
+                        <StackLayout Grid.Column="1" Spacing="10"  Padding="0" VerticalOptions="Center">
+                            <Label Text="Creattive Thinking" FontFamily="BoldFont" FontSize="{StaticResource BigSize}" TextColor="Black" />
+                            <Label Text="1 hour 45 mins" FontFamily="MediumFont" FontSize="{StaticResource SmallSize}" TextColor="Black" />
+                        </StackLayout>
+
+                        <Frame BackgroundColor="White" Grid.Column="2"  VerticalOptions="Center" HeightRequest="50" WidthRequest="50" Padding="0" IsClippedToBounds="True"  CornerRadius="25">
+                            <Label Text="&#x000f040c;" TextColor="{DynamicResource SecondaryColor}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" FontFamily="material" />
+                        </Frame>
+                    </Grid>
+                </Frame>
+
+                <Frame BackgroundColor="#F0FFFC" CornerRadius="20" HeightRequest="100" Padding="0,0,20,0">
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="20">
+                        <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="20" WidthRequest="60" />
+
+                        <StackLayout Grid.Column="1" Spacing="10"  Padding="0" VerticalOptions="Center">
+                            <Label Text="Creattive Thinking" FontFamily="BoldFont" FontSize="{StaticResource BigSize}" TextColor="Black" />
+                            <Label Text="1 hour 45 mins" FontFamily="MediumFont" FontSize="{StaticResource SmallSize}" TextColor="Black" />
+                        </StackLayout>
+
+                        <Frame BackgroundColor="White" Grid.Column="2"  VerticalOptions="Center" HeightRequest="50" WidthRequest="50" Padding="0" IsClippedToBounds="True"  CornerRadius="25">
+                            <Label Text="&#x000f040c;" TextColor="{DynamicResource SecondaryColor}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" FontFamily="material" />
+                        </Frame>
+                    </Grid>
+                </Frame>
+
+                <Frame BackgroundColor="#F0FFFC" CornerRadius="20" HeightRequest="100" Padding="0,0,20,0">
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="20">
+                        <Frame BackgroundColor="{DynamicResource SecondaryColor}" CornerRadius="20" WidthRequest="60" />
+
+                        <StackLayout Grid.Column="1" Spacing="10"  Padding="0" VerticalOptions="Center">
+                            <Label Text="Creattive Thinking" FontFamily="BoldFont" FontSize="{StaticResource BigSize}" TextColor="Black" />
+                            <Label Text="1 hour 45 mins" FontFamily="MediumFont" FontSize="{StaticResource SmallSize}" TextColor="Black" />
+                        </StackLayout>
+
+                        <Frame BackgroundColor="White" Grid.Column="2"  VerticalOptions="Center" HeightRequest="50" WidthRequest="50" Padding="0" IsClippedToBounds="True"  CornerRadius="25">
+                            <Label Text="&#x000f040c;" TextColor="{DynamicResource SecondaryColor}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" FontFamily="material" />
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

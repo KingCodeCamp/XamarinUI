@@ -1,8 +1,5 @@
 ﻿using System;
 using Wave.Views;
-using Wave.Views.Authentication;
-using Wave.Views.Test;
-using Wave.Views.Trainer;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,8 +16,7 @@ namespace Wave
         {
             InitializeComponent();
 
-           // MainPage = new SplashScreen();
-            MainPage = new ProfilePage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()

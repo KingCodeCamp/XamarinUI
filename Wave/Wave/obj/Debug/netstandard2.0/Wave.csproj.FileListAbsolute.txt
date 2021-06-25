@@ -46,15 +46,9 @@ C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Aut
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Onboarding\FirstPage.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Onboarding\SecondPage.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Onboarding\ThirdPage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\SplashScreen.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\TakeTestPage.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Test\InstructionPage.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Test\QuestionPage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Trainer\EditProfilePage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Trainer\PersonInfoPage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Trainer\ProfilePage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Trainer\StartCoursePage.xaml.g.cs
-C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\Trainer\StartLecturePage.xaml.g.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Wave.AssemblyInfoInputs.cache
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Wave.AssemblyInfo.cs
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Wave.csproj.CoreCompileInputs.cache
@@ -62,3 +56,4 @@ C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\XamlC.sta
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Wave.dll
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\ref\Wave.dll
 C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Wave.pdb
+C:\Complus Projects\TutorialArticle\Wave\Wave\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
